@@ -20,6 +20,27 @@
             "state": "done",
             "deadline": 1592500316,
             "created": 1592413916
-        }
+        },
+        {   "id": 4,
+            "title": "Crear JSON 4 para el proyecto",
+            "person": "beto",
+            "state": "to-do",
+            "deadline": 1592500316,
+            "created": 1592413916
+        },
+        {   "id": 5,
+            "title": "Crear JSON 5 para el proyecto",
+            "person": "beto",
+            "state": "to-do",
+            "deadline": 1592500316,
+            "created": 1592413916
+        },
+        {   "id": 6,
+            "title": "Crear JSON 6 para el proyecto",
+            "person": "beto",
+            "state": "done",
+            "deadline": 1592500316,
+            "created": 1592413916
+        },
     ]
 }
