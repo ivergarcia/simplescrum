@@ -1,73 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
     <title>SimpleScrum</title>
-</head>
-<body id="body">
+  </head>
+  <body id="body">
     <header>
-        <div class="header-container">
-            <img src="logo.svg" alt="Logo SimpleScrum">
-            <button id="newTask" class="button">Crear tarea</button>
-        </div>
+      <div class="header-container">
+        <img src="logo.svg" alt="Logo SimpleScrum" />
+        <button id="newTask" class="button">Crear tarea</button>
+      </div>
     </header>
     <main>
-        <div class="main-container">
-            <h1>SimpleScrum</h1>
-            <div class="container">
-                <h2>TO DO</h2>
-                <div class="task-container" id="todoTasks">
-                </div>
-            </div>
-            <div class="container">
-                <h2>IN PROCESS</h2>
-                <div class="task-container" id="inprocessTasks">
-                </div>
-            </div>
-            <div class="container">
-                <h2>DONE</h2>
-                <div class="task-container" id="doneTasks">
-                </div>
-            </div>
+      <div class="main-container">
+        <h1>SimpleScrum</h1>
+        <div class="container">
+          <h2>TO DO</h2>
+          <div class="task-container" id="todoTasks"></div>
         </div>
+        <div class="container">
+          <h2>IN PROCESS</h2>
+          <div class="task-container" id="inprocessTasks"></div>
+        </div>
+        <div class="container">
+          <h2>DONE</h2>
+          <div class="task-container" id="doneTasks"></div>
+        </div>
+      </div>
     </main>
     <aside id="formElement">
-        <div class="aside-container">
-            <h2>Nueva Tarea</h2>
-            <div class="form-container">
-                <form>
-                    <div class="input-container">
-                        <label for="titleTask">Título</label>
-                        <input name="titleTask" id="titleTask" type="text" placeholder="Escriba un titulo descriptivo">
-                    </div>
-                    <div class="input-container">
-                        <label for="personTask">Responsable</label>
-                        <select name="personTask" id="personTask">
-                            <option value="">-Seleccionar-</option>
-                            <option value="beto">Beto Cuevas</option>
-                            <option value="milton"> Milton Garcia</option>
-                            <option value="iver">Iver Garcia</option>
-                        </select>
-                    </div>
-                    <div class="input-container">
-                        <label for="deadlineTask">Plazo de entrega</label>
-                        <select name="deadlineTask" id="deadlineTask">
-                            <option value="">-Seleccionar-</option>
-                            <option value="one">1 dia</option>
-                            <option value="two">2 dias</option>
-                            <option value="seven">1 semana</option>
-                        </select>
-                    </div>
-                    <div class="action-container">
-                        <button type="button" id="saveTask">Guardar</button>
-                        <button type="reset" id="reset">Cancelar</button>
-                    </div>
-                </form>
+      <div class="aside-container">
+        <h2>Nueva Tarea</h2>
+        <div class="form-container">
+          <form>
+            <div class="input-container">
+              <label for="titleTask">Título</label>
+              <input
+                name="titleTask"
+                id="titleTask"
+                type="text"
+                placeholder="Escriba un titulo descriptivo"
+              />
             </div>
+            <div class="input-container">
+              <label for="descriptionTask">Descripción</label>
+              <textarea
+                name="descriptionTask"
+                id="descriptionTask"
+                placeholder="Escriba una descripción"
+              ></textarea>
+            </div>
+            <div class="input-container">
+              <label for="personTask">Responsable</label>
+              <select name="personTask" id="personTask">
+                <option value="">-Seleccionar-</option>
+                <option value="beto">Beto Cuevas</option>
+                <option value="milton"> Milton Garcia</option>
+                <option value="iver">Iver Garcia</option>
+              </select>
+            </div>
+            <div class="input-container">
+              <label for="deadlineTask">Plazo de entrega</label>
+              <select name="deadlineTask" id="deadlineTask">
+                <option value="">-Seleccionar-</option>
+                <option value="one">1 dia</option>
+                <option value="two">2 dias</option>
+                <option value="seven">1 semana</option>
+              </select>
+            </div>
+            <div class="action-container">
+              <button type="submit" id="saveTask">Guardar</button>
+              <button type="reset" id="reset">Cancelar</button>
+            </div>
+          </form>
         </div>
+      </div>
     </aside>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -79,6 +89,5 @@
     <script src="scripts/gesture.js"></script>
     <script src="scripts/petitions.js"></script>
     <script src="scripts/draggadrop.js"></script>
-
-</body>
+  </body>
 </html>

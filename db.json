@@ -1,46 +1,58 @@
 {
-    "tasks": [
-        {   "id": 1,
-            "title": "Crear JSON para el proyecto",
-            "person": "beto",
-            "state": "to-do",
-            "deadline": 1592500316,
-            "created": 1592413916
-        },
-        {   "id": 2,
-            "title": "Crear JSON 2 para el proyecto",
-            "person": "beto",
-            "state": "in-process",
-            "deadline": 1592500316,
-            "created": 1592413916
-        },
-        {   "id": 3,
-            "title": "Crear JSON 3 para el proyecto",
-            "person": "beto",
-            "state": "done",
-            "deadline": 1592500316,
-            "created": 1592413916
-        },
-        {   "id": 4,
-            "title": "Crear JSON 4 para el proyecto",
-            "person": "beto",
-            "state": "to-do",
-            "deadline": 1592500316,
-            "created": 1592413916
-        },
-        {   "id": 5,
-            "title": "Crear JSON 5 para el proyecto",
-            "person": "beto",
-            "state": "to-do",
-            "deadline": 1592500316,
-            "created": 1592413916
-        },
-        {   "id": 6,
-            "title": "Crear JSON 6 para el proyecto",
-            "person": "beto",
-            "state": "done",
-            "deadline": 1592500316,
-            "created": 1592413916
-        }
-    ]
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Crear JSON para el proyecto",
+      "description": "soy una descripcion de los titulos que se escribieron ahi mismo",
+      "person": "beto",
+      "state": "to-do",
+      "deadline": 1592500316,
+      "created": 1592413916
+    },
+    {
+      "id": 2,
+      "title": "Crear JSON 2 para el proyecto",
+      "description": "soy una descripcion de los titulos que se escribieron ahi mismo",
+      "person": "beto",
+      "state": "in-process",
+      "deadline": 1592500316,
+      "created": 1592413916
+    },
+    {
+      "id": 3,
+      "title": "Crear JSON 3 para el proyecto",
+      "description": "soy una descripcion de los titulos que se escribieron ahi mismo",
+      "person": "beto",
+      "state": "done",
+      "deadline": 1592500316,
+      "created": 1592413916
+    },
+    {
+      "id": 4,
+      "title": "Crear JSON 4 para el proyecto",
+      "description": "soy una descripcion de los titulos que se escribieron ahi mismo",
+      "person": "beto",
+      "state": "to-do",
+      "deadline": 1592500316,
+      "created": 1592413916
+    },
+    {
+      "id": 5,
+      "title": "Crear JSON 5 para el proyecto",
+      "description": "soy una descripcion de los titulos que se escribieron ahi mismo",
+      "person": "beto",
+      "state": "to-do",
+      "deadline": 1592500316,
+      "created": 1592413916
+    },
+    {
+      "id": 6,
+      "title": "Crear JSON 6 para el proyecto",
+      "description": "soy una descripcion de los titulos que se escribieron ahi mismo",
+      "person": "beto",
+      "state": "done",
+      "deadline": 1592500316,
+      "created": 1592413916
+    }
+  ]
 }

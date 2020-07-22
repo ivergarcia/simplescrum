@@ -47,7 +47,7 @@ h1 {
  */
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -85,7 +85,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -233,7 +233,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -268,7 +268,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -345,7 +345,7 @@ template {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -358,13 +358,18 @@ template {
 body {
   width: 100%;
   height: 100vh;
-  background: #F6F8F9;
+  background: #f6f8f9;
   font-family: sans-serif;
   color: var(--normal-text);
   overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--dark-text);
   margin-top: 0;
 }
@@ -381,19 +386,22 @@ h1 {
   display: none;
 }
 
-header .header-container, main {
+header .header-container,
+main {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
-  header .header-container, main {
+  header .header-container,
+  main {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
-.button, .action-container button {
+.button,
+.action-container button {
   color: #fff;
   cursor: pointer;
   padding: 0.35rem 1rem;
@@ -408,9 +416,10 @@ header .header-container, main {
   transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
-.button:hover, .action-container button:hover {
+.button:hover,
+.action-container button:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 header {
@@ -418,8 +427,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: var(--header-height);
   background: #fff;
@@ -430,11 +439,11 @@ header .header-container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 header img {
@@ -442,7 +451,7 @@ header img {
 }
 
 header .button {
-  --color: #FFBA42;
+  --color: #ffba42;
 }
 
 main {
@@ -452,8 +461,9 @@ main {
 main .main-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (300px)[3];
-      grid-template-columns: repeat(3, 300px);
+  /* -ms-grid-columns: (300px)[3]; */
+  /* -ms-grid-columns: 300px 300px 300px; */
+  grid-template-columns: repeat(3, 300px);
   gap: 1rem;
 }
 
@@ -479,7 +489,7 @@ main .container .task-container {
   height: 100%;
   overflow: auto;
   padding: 0.5rem;
-  background: #FCFDFD;
+  background: #fcfdfd;
 }
 
 main .container:hover .task {
@@ -500,7 +510,7 @@ main .container h2 {
   cursor: pointer;
   min-width: 284px;
   -webkit-box-shadow: 0 1px 3px 0 rgba(21, 27, 38, 0.15);
-          box-shadow: 0 1px 3px 0 rgba(21, 27, 38, 0.15);
+  box-shadow: 0 1px 3px 0 rgba(21, 27, 38, 0.15);
   -webkit-transition: -webkit-box-shadow 0.25s;
   transition: -webkit-box-shadow 0.25s;
   transition: box-shadow 0.25s;
@@ -509,7 +519,7 @@ main .container h2 {
 
 .task:hover {
   -webkit-box-shadow: 0px 6px 20px 0 rgba(21, 27, 38, 0.2);
-          box-shadow: 0px 6px 20px 0 rgba(21, 27, 38, 0.2);
+  box-shadow: 0px 6px 20px 0 rgba(21, 27, 38, 0.2);
 }
 
 .task:not(:last-of-type) {
@@ -533,7 +543,8 @@ main .container h2 {
   color: var(--light-text);
 }
 
-.input-container input, .input-container select {
+.input-container input,
+.input-container select {
   border: 1px solid #ccc;
   border-radius: 0.25rem;
   padding: 0.5rem 0.75rem;
@@ -548,9 +559,9 @@ aside {
   padding: 2rem;
   background: #fff;
   -webkit-box-shadow: 2px 0 3px 5px rgba(21, 27, 38, 0.05);
-          box-shadow: 2px 0 3px 5px rgba(21, 27, 38, 0.05);
+  box-shadow: 2px 0 3px 5px rgba(21, 27, 38, 0.05);
   -webkit-transform: translate(100%);
-          transform: translate(100%);
+  transform: translate(100%);
   will-change: transform;
   -webkit-transition: -webkit-transform 0.25s;
   transition: -webkit-transform 0.25s;
@@ -567,7 +578,7 @@ aside {
 
 aside.active {
   -webkit-transform: initial;
-          transform: initial;
+  transform: initial;
 }
 
 .input-container {
@@ -576,8 +587,8 @@ aside.active {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 1.25rem;
 }
 
@@ -590,17 +601,17 @@ aside.active {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
 .action-container button[type="submit"] {
-  --color: #1192EE;
+  --color: #1192ee;
 }
 
 .action-container button[type="reset"] {
-  border: 1px solid #D84646;
-  color: #D84646;
+  border: 1px solid #d84646;
+  color: #d84646;
 }
 /*# sourceMappingURL=styles.css.map */
 
@@ -616,9 +627,10 @@ article {
   z-index: 0;
 }
 
-.draggable--over, .draggable-source--is-dragging {
+.draggable--over,
+.draggable-source--is-dragging {
   border-color: goldenrod;
-  opacity: .4;
+  opacity: 0.4;
   background: #eee;
 }
 
